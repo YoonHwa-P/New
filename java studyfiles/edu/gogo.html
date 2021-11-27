@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>나와라 구구단</title>
+</head>
+<body>
+	<table border="1">
+		<script>
+			function gogo(a, b) {
+				var go;
+				go = a * b;
+				return go;
+			}
+
+			for (let i = 2; i < 10; i++) {
+				document.write(i + "단 구구단 출력 <br>");
+				for (let j = 1; j < 10; j++) {
+					document.write(i +" X " + j + " = " + gogo(i,j) + "<br>");
+				}
+				document.write(" <br>");
+			}
+			
+		</script>
+	</table>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>포문으로 더크게</title>
+</head>
+<body>
+	<h3>for 문으로 10px에서 35px까지!!!</h3>
+	<hr>
+	<script>
+		for (var size = 10; size <= 35; size += 5) {
+			document.write("<span style='font-size: " + size + "px'>");
+			document.write(size + "px");
+			document.write("</span>");
+
+		}
+	</script>
+	<br>
+	<hr>
+	<h3>while문으로 0에서 10까지 합 구하기</h3>
+
+	<script>
+		var n = prompt("0보다 큰 정수를 입력 하세요", 0);
+		n = parseInt(n);
+
+		var i = 0, sum = 0;
+		while (i < n) {
+			sum += i;
+			i++;
+		}
+		document.write("0에서" + n + "까지의 합은 " + sum);
+	</script>
+
+
+	<br>
+	<hr>
+	<h3> do ~while문으로 n까지 합 구하기</h3>
+
+	<script>
+	var a = prompt("0보다 큰 정수의 합");
+	a = parseInt(a);
+	var j = 0, hap=0;
+	
+	do {hap += a; j++;}
+	while(j<=n)
+		
+		document.write(n + "까지의 합은 " +hap)
+	</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바 스크립트 배운당</title>
+</head>
+<body>
+
+	<h3>document.write()활용</h3>
+	<script>
+		document.write("<h2>Welcome!</h2>");
+		document.write("<h3>산술연산</h3>");
+		document.write("2+5 는 <br>");
+		document.write("<mark>7 입니다.</mark> <br><hr>");
+
+		let x = 32; //let 으로 선언하면 변수가 중복 되면 걸러줌
+		let total = 100 + x * 2 / 4 - 3;
+		let div = x / 10;
+		let mod = x % 2;
+
+		document.write("x= " + x + "<br>");
+		document.write("100+x*2/4-3= " + total + "<br>");
+		document.write("x/10= " + div + "<br>");
+		document.write("x%2= " + mod + "<br><br><hr>");
+
+		document.write("<h3>대입연산</h3>");
+		let a = 3, b = 3, c = 3;
+		document.write("a= " + a + ", b=" + b);
+		document.write(", c=" + c + "<br><br>");
+
+		a += 3;
+		b *= 3;
+		c %= 2;
+
+		document.write("a+= 3; 실행후, a= " + a + "<br>");
+		document.write("b*= 3; 실행후, b= " + b + "<br>");
+		document.write("c%= 2; 실행후, c= " + c + "<br><br><hr>");
+
+		document.write("<h3>논리 연산 1</h3>");
+		let d = 13, e = 7;
+		document.write("d = " + d + ", e = " + e + "<br>");
+		document.write("d == e : " +( d == e )+ "<br>");
+		document.write("d != e : " + (d != e) + "<br>");
+		document.write("d >= e : " +( d >= e) + "<br>");
+		document.write("d > e : " + (d > e) + "<br>");
+		document.write("d <= e : " +( d <= e )+ "<br>");
+		document.write("d < e : " + (d < e) + "<br><br><hr>");
+		
+		document.write("<h3>논리 연산 2</h3>");
+		let t=true, f=false;
+		document.write("t = " + t + ", f = " + f + "<br>");
+		document.write("t && f : " + (t && f) + "<br>");
+		document.write("t || f : " + (t || f) + "<br>");
+		document.write(" !t : " + (!t) + "<br><hr>");
+		document.write("(3>2) && (3<4) : " + ((3>2) && (3<4)) + "<br>");
+		document.write("(3==-2) || (-1<0) : " + ((3==-2) || (-1<0)) + "<br>");
+		
+	</script>
+
+</body>
+</html>

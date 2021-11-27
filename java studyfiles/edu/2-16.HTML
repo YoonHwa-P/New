@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>표 만들기</title>
+</head>
+<body>
+	<br>
+	<h3>첫번째 표</h3>
+	<br>
+	<hr>
+	<table>
+		<thead>
+			<tr>
+				<th>이름</th>
+				<th>HTML</th>
+				<th>CSS</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>박윤화</th>
+				<th>100</th>
+				<th>99</th>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br>
+	<br>
+	<hr>
+	<br>
+	<h3>기본구조를 가진 표</h3>
+	<br>
+	<hr>
+	<table border="1">
+		<caption>1학기 성적</caption>
+		<thead>
+			<tr>
+				<th>이름</th>
+				<th>HTML</th>
+				<th>CSS</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<th>sum</th>
+				<th>225</th>
+				<th>230</th>
+			</tr>
+		</tfoot>
+
+		<tbody>
+			<tr>
+				<th>김유진</th>
+				<th>80</th>
+				<th>70</th>
+			</tr>
+			<tr>
+				<th>리치</th>
+				<th>95</th>99
+				</th>
+			</tr>
+			<tr>
+				<th>탄</th>
+				<th>40</th>
+				<th>61</th>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<hr>
+	<br>
+	<table border="1">
+		<caption>행, 열 병합 예제</caption>
+		<tr>
+			<th>1열</th>
+			<th>2열</th>
+			<th>3열</th>
+		</tr>
+		<tr>
+			<td rowspan="2">1행1열</td>
+			<td>1행2열</td>
+			<td>1행3열</td>
+		</tr>
+		<tr>
+			<td>2행2열</td>
+			<td>1행3열</td>
+		</tr>
+		<tr>
+			<td colspan="3">3행1열</td>
+		</tr>
+	</table>
+</body>
+</html>

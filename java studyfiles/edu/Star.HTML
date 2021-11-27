@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>별 쌓기</title>
+</head>
+<body>
+
+	<script>
+		for (var i = 1; i < 16; i++) {
+			for (var k = 15 - i; k > 0; k = k--) {
+				document.write("&nbsp;")
+			}
+			for (var j = 0; j < 2 * i - 1; j++) {
+				document.write("*")
+			}
+			document.write("&nbsp; <br>")
+		}
+	</script>
+</body>
+</html>

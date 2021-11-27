@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>당신의 띠를 알려주마</title>
+</head>
+<body>
+	<script>
+		let DD = prompt("출생 연도를 입력 하세요", "1991");
+		let animal;
+
+		DD = parseInt(DD);
+
+		switch (DD % 12) {
+		case  1:
+			animal = "닭(유)";break;
+		case  2:
+			animal = "개(술)";break;
+		case  3:
+			animal = "돼지(해)";break;
+		case  4:
+			animal = "쥐(자)";break;
+		case  5:
+			animal = "소(축)";break;
+		case  6:
+			animal = "범(인)";break;
+		case  7:
+			animal = "토끼(묘)";break;
+		case  8:
+			animal = "용(진)";break;
+		case  9:
+			animal = "뱀(사)";break;
+		case  10:
+			animal = "말(오)";break;
+		case  11:
+			animal = "양(미)";break;
+		case  0:
+			animal = "원숭이(신)";break;
+		default:
+			document.write("잘못 입력 하셨습니다.4자리 출생연도를 입력 하세요.")
+		}
+		alert(`${DD}년에 태어 났다면 ${animal} 띠 입니다.`)
+	</script>
+</body>
+</html>

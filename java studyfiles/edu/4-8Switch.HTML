@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>커피 주문 받아요!</title>
+</head>
+<body>
+	<h3>Switch 문으로 coffee 주문을 받아 볼께요</h3>
+	<hr>
+	<br>
+	<script>
+		let CF = prompt("어떤 커피 주문 하시겠습니까", "ice americano");
+		let price;
+		switch (CF) {
+		case "에프":
+		case "espresso":
+			price = "3000원";
+			break;
+		case "아아":
+		case "ice americano":
+			price = "3500원";
+			break;
+		case "아라":
+		case "ice latte":
+			price = "4000원";
+			break;
+		case "아바라":
+		case "ice valila latte":
+			price = "4500원";
+			break;
+		case "아포가토":
+		case "aforgatto":
+			price = "3500원";
+			break;
+		default:
+			document.write("해당메뉴는 판매하지 않습니다.");
+		}
+
+		document.write("주문하신 coffee는 " + CF + " , " + price + "입니다.");
+	</script>
+
+</body>
+</html>
